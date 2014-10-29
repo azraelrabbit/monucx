@@ -21,7 +21,7 @@ ENV LD_LIBRARY_PATH $LD_LIBRARY_PATH:/opt/mono/lib
 ENV PKG_CONFIG_PATH $PKG_CONFIG_PATH:/opt/mono/lib/pkgconfig
 
 # install mono web server Jexus
-RUN curl jexus.org/5.6.3/install|sh
+RUN curl https://raw.githubusercontent.com/azraelrabbit/monufile/master/jwsinstall|sh
 
 
 # open port for ssh 
