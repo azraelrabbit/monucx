@@ -4,7 +4,7 @@ FROM centos:centos6
 MAINTAINER azraelrabbit <azraelrabbit@gmail.com>
 
 #Install required system packages
-RUN yum install wget 
+RUN yum install -y wget 
 
 #add mono-opt source
 WORKDIR /etc/yum.repos.d
