@@ -13,7 +13,7 @@ RUN wget http://download.opensuse.org/repositories/home:tpokorra:mono/CentOS_Cen
 RUN yum install -y openssh-server mono-opt
 
 RUN mkdir -p /var/run/sshd
-RUN echo 'root:monupx' |chpasswd
+RUN echo root:monupx |chpasswd
 
 #set the PATH for mono-opt
 ENV PATH $PATH:/opt/mono/bin
