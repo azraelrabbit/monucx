@@ -10,7 +10,7 @@ RUN yum install -y wget sudo tar
 WORKDIR /etc/yum.repos.d
 
 RUN wget http://download.opensuse.org/repositories/home:tpokorra:mono/CentOS_CentOS-6/home:tpokorra:mono.repo
-RUN yum install -y openssh-server mono-opt
+RUN yum install -y openssh-server mono-*opt
 
 RUN mkdir -p /var/run/sshd
 RUN echo root:monupx |chpasswd
